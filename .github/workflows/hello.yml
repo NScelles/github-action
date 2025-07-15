@@ -1,0 +1,15 @@
+# Nom du workflow
+name: Premier workflow
+# Déclancheur du workflows
+on: workflow_dispatch
+
+# Les actions du workflows
+jobs:
+  # première action
+  premier-job:
+    # Le model de la machine qui va être utilisé pour tester le code
+    runs-on: ubuntu-latest
+    # Les étapes de l'action,
+    steps:
+      - name: Say Hello
+        run: echo "Hello I'm under the water"
