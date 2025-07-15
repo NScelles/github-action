@@ -13,3 +13,12 @@ jobs:
     steps:
       - name: Say Hello
         run: echo "Hello I'm under the water"
+
+      - name: Say Goodbye
+        run: echo "Au revoir 🧑‍💼"
+
+  deuxieme-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say job2
+        run: echo "Me Job deux"
