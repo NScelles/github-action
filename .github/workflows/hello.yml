@@ -1,7 +1,12 @@
 # Nom du workflow
 name: Premier workflow
 # Déclancheur du workflows
-on: workflow_dispatch
+on: 
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    
 
 # Les actions du workflows
 jobs:
